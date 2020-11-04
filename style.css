@@ -1,9 +1,98 @@
 body{
-	background-color: Peru;
+	background-color: Lightblue;
 }
 h1{
-	color: Lightyellow;
+	color: black;
+	font-weight: bold;
 }
 h2{
-	color: yellow;
+	color: Navy;
 }
+
+img{
+	border: solid 5px black;
+	width: 220px;
+	border-radius: 15px;
+   	height: 200px;
+}
+thead{
+   	text-align: center;
+   	background-color: SteelBlue;
+}
+table{
+	border: 1;
+	width: 76;
+    margin: auto;
+}
+.card{
+	width: 40%;
+	height: 470px;
+	margin: 20px;
+	float: left;
+    display: block;
+    border: 2px  solid black;
+    border-radius: 15px;
+    overflow: auto;
+}
+h3{
+	text-align: center;
+}
+h4{
+	text-align: center;
+}
+.sidebar{
+	width: 5%;
+	height: 20px;
+}
+a{
+	background-color: silver;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 24px;
+	float: right;
+}
+.table{
+			width: 300px;
+			height: 1100px;
+			border: 2px solid black;
+			margin: auto;
+		}
+.cell{
+			width: 100px;
+			height: 100px;
+			border: 1px solid black;
+			float: left;
+			box-sizing: border-box;
+			text-align: center;		
+		}
+
+.row:nth-child(odd)>.cell:nth-child(odd){
+			background-color: #3754bd;
+        }
+.row:nth-child(odd)>.cell:nth-child(odd):hover{
+			background-color: #C9D0E2;
+        }
+
+.row:nth-child(even)>.cell:nth-child(even){
+            background-color: #6b83c2; 
+        }
+.row:nth-child(even)>.cell:nth-child(even):hover{
+            background-color: #C9D0E2; 
+        }
+
+
+
+.row:nth-child(even)>.cell:nth-child(odd){
+			background-color: #217DC4;
+		}
+.row:nth-child(even)>.cell:nth-child(odd):hover{
+			background-color: #C9D0E2;
+        }
+
+.row:nth-child(odd)>.cell:nth-child(even){
+            background-color: #A890E3; 
+        }
+.row:nth-child(odd)>.cell:nth-child(even):hover{
+            background-color: #C9D0E2;
+        }
+
