@@ -4,16 +4,16 @@ body{
 h1{
 	color: black;
 	font-weight: bold;
+	text-align: center;
 }
 h2{
 	color: Navy;
+	text-align: center;
 }
 
 img{
-	border: solid 5px black;
 	width: 220px;
-	border-radius: 15px;
-   	height: 200px;
+	height: 200px;
 }
 thead{
    	text-align: center;
@@ -34,23 +34,14 @@ table{
     border-radius: 15px;
     overflow: auto;
 }
+
 h3{
 	text-align: center;
 }
 h4{
 	text-align: center;
 }
-.sidebar{
-	width: 5%;
-	height: 20px;
-}
-a{
-	background-color: silver;
-	padding: 12px;
-	text-decoration: none;
-	font-size: 24px;
-	float: right;
-}
+
 .table{
 			width: 300px;
 			height: 1100px;
@@ -95,4 +86,16 @@ a{
 .row:nth-child(odd)>.cell:nth-child(even):hover{
             background-color: #C9D0E2;
         }
+.arrow{
+	width: 75px; 
+	height:75px; 
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	text-decoration: none;
+	font-size: 30px;
+	text-align: center;
+	}
+
+
 
