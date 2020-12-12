@@ -10,7 +10,9 @@ h2{
 	color: Navy;
 	text-align: center;
 }
-
+a{
+	text-decoration: none;
+}
 img{
 	width: 220px;
 	height: 200px;
