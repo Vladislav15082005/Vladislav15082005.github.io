@@ -1,36 +1,141 @@
-body{
-	background-color: Lightblue;
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: Lightblue;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
 }
-h1{
-	color: black;
-	font-weight: bold;
-	text-align: center;
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
 }
-h2{
-	color: Navy;
-	text-align: center;
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
 }
-a{
-	text-decoration: none;
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-img{
-	width: 220px;
-	height: 200px;
+
+
+
+/* Intro */     /* заголовок сайта */
+.intro {   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url("intro.jpg") center no-repeat;
+    background-size: cover;
+}
+.intro__inner {   /* контейнер с заголовком сайта */
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+}
+.intro__title {   /* Welcome to MoGo */
+    color: #fff;
+    font-size: 70px;
+    font-weight: 700;           /* жирний текст (700 = bold) */
+    
+    line-height: 1;             /* ростояние по верткали */
+}
+.intro__title:after {        /* полоска */
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 60px auto;
+    background-color: #fff;
+}
+.intro__suptitle {             /* Creative Template */
+    margin-bottom: 20px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 72px;
+    color: #fff;
+}
+
+
+
+/* Header */               /* верхняя панель */
+.header {
+    width: 100%;
+    padding-top: 30px;
+    position: absolute;
+    top: 0;               /* ростояние от верхнего края*/
+    left: 0;              /* ростояние от левого края*/
+    right: 0;             /* ростояние от правого края*/
+    z-index: 1000;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {           /* MoGo логотип */
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+/* Nav */                  /* навигация */
+.nav {                     /* контейнер навигации */
+    font-size: 14px;
+    text-transform: uppercase;   
+}
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+.nav__link:after {          /* полоска */
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fce38a;
+    opacity: 0;             /* прозрачность */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity .1s linear;
+}
+.nav__link:hover { 
+    color: #fce38a;
+}
+.nav__link:hover:after,
+.nav__link.active:after {
+    opacity: 1;
+}
+.nav__link.active {
+    color: #fce38a;
 }
 thead{
-   	text-align: center;
-   	background-color: SteelBlue;
+    text-align: center;
+    background-color: SteelBlue;
 }
 table{
-	border: 1;
-	width: 76;
+    border: 1;
+    width: 76;
     margin: auto;
 }
 .card{
-	width: 40%;
-	height: 470px;
-	margin: 20px;
-	float: left;
+    width: 40%;
+    height: 470px;
+    margin: 20px;
+    float: left;
     display: block;
     border: 2px  solid black;
     border-radius: 15px;
@@ -38,32 +143,32 @@ table{
 }
 
 h3{
-	text-align: center;
+    text-align: center;
 }
 h4{
-	text-align: center;
+    text-align: center;
 }
 
 .table{
-			width: 300px;
-			height: 1100px;
-			border: 2px solid black;
-			margin: auto;
-		}
+            width: 300px;
+            height: 1100px;
+            border: 2px solid black;
+            margin: auto;
+        }
 .cell{
-			width: 100px;
-			height: 100px;
-			border: 1px solid black;
-			float: left;
-			box-sizing: border-box;
-			text-align: center;		
-		}
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            float: left;
+            box-sizing: border-box;
+            text-align: center;     
+        }
 
 .row:nth-child(odd)>.cell:nth-child(odd){
-			background-color: #3754bd;
+            background-color: #3754bd;
         }
 .row:nth-child(odd)>.cell:nth-child(odd):hover{
-			background-color: #C9D0E2;
+            background-color: #C9D0E2;
         }
 
 .row:nth-child(even)>.cell:nth-child(even){
@@ -76,10 +181,10 @@ h4{
 
 
 .row:nth-child(even)>.cell:nth-child(odd){
-			background-color: #217DC4;
-		}
+            background-color: #217DC4;
+        }
 .row:nth-child(even)>.cell:nth-child(odd):hover{
-			background-color: #C9D0E2;
+            background-color: #C9D0E2;
         }
 
 .row:nth-child(odd)>.cell:nth-child(even){
@@ -89,15 +194,29 @@ h4{
             background-color: #C9D0E2;
         }
 .arrow{
-	width: 75px; 
-	height:75px; 
-	position: fixed;
-	right: 0;
-	bottom: 0;
-	text-decoration: none;
-	font-size: 30px;
-	text-align: center;
-	}
+    width: 75px; 
+    height:75px; 
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    }
+img{
+    width: 220px;
+    height: 200px;
+}
+h1{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+h2{
+    color: Navy;
+    text-align: center;
+}
+
 
 
 

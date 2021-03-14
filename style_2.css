@@ -1,0 +1,45 @@
+body{
+	margin: 20px;
+	background: linear-gradient( 45deg , #ef32d9, #89fffd);
+	background-size: 600% 600%;
+	animation: gradients 10s ease infinite;
+}
+@keyframes gradients{
+	0%{background-position: 0% 50%;}
+	50%{background-position: 100% 50%; }
+	100%{background-position: 0 50%; }
+}
+.title{
+	font-size: 70px;
+	text-align: center;
+	font-family: font-family: 'RocknRoll One', sans-serif;
+	color: #1e0000;
+	background: #1e0000;
+	display: block;
+	border-radius: 50px;
+	margin: 100px 20% 100px 20%;
+	animation-name: anim_title;
+	animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-iteration-count:infinite ;
+	animation-direction: alternate;
+}
+@keyframes anim_title{
+	0%{color:#1e0000;}
+	25%{color:#f9f9ff;}
+	50%{color:#1e0000;}
+	75%{color:#f9f9ff;}
+	100%{color:#1e0000;}
+}
+audio{
+	margin: 0 40% 100px 40%;
+}
+audio:focus{
+	box-shadow: 0px 0px 20px 0px black;
+}
+video{
+    margin: 0 33% 0 33%;
+}
+video:focus{
+	box-shadow: 0px 0px 30px 0px  black;
+}
